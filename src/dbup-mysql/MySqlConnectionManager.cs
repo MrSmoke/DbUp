@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using DbUp.Engine.Transactions;
-using MySql.Data.MySqlClient;
+using MySqlConnector;
 
 namespace DbUp.MySql
 {
@@ -18,7 +18,7 @@ namespace DbUp.MySql
         }
 
         /// <summary>
-        /// Splits the statements in the script using the ";" character or 
+        /// Splits the statements in the script using the ";" character or
         /// DELIMITER if specified.
         /// </summary>
         /// <param name="scriptContents">The contents of the script to split.</param>
